@@ -17,4 +17,6 @@ Once clone is completed, create folder "resources" under "main" folder and copy 
 Note : Please follow name of files as mentioned above.
 
 ### To run the app, execute below command using command line (from streamexample folder).
+mvn install
+
 mvn exec:java
