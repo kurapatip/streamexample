@@ -24,7 +24,7 @@ public class App {
 	public static void main(String[] args) throws IOException {
 		App app = new App();
 		try {
-			System.out.println("Analyzing the first file : users-11.json");
+			System.out.println("Analyzing the first file : users-1.json");
 			app.analyse("users-1.json");
 			// app.analyse("small-user-data.json");
 			System.out.println("Analyzing the second file : users-2.json");

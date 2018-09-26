@@ -1,5 +1,6 @@
 package com.aisera.aggregation;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +25,11 @@ public class MeanUnreadMessageFemaleGenderAggregate implements Aggregate {
 
 	@Override
 	public String toString() {
-		return String.format("Mean value of Unread Message of Female Gender is  %f\n",
-				Util.meanInt(unreadMessageCountOfFemaleGender));
+		DecimalFormat df2 = new DecimalFormat(".##");
+		Double unReadMessageCount = Util.meanInt(unreadMessageCountOfFemaleGender);
+		
+		return String.format("Mean value of Unread Message of Female Gender is  %s\n",
+				df2.format(unReadMessageCount));
 	}
 
 	private Integer getUnreadMessageCount(String greeting) {

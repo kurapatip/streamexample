@@ -1,5 +1,6 @@
 package com.aisera.aggregation;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +23,9 @@ public class MeanBalanceAmountAggregate implements Aggregate {
 
 	@Override
 	public String toString() {
-		return String.format("Mean value of User Balance Amount is %f\n", Util.mean(balanceAmountList));
+		DecimalFormat df2 = new DecimalFormat(".##");
+		Double meanBalanceAmount = Util.mean(balanceAmountList);
+		return String.format("Mean value of User Balance Amount is $%s\n", df2.format(meanBalanceAmount) );
 	}
 
 	private Double formatValue(String balanceAmount) {
