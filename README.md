@@ -12,7 +12,7 @@ Use below command to clone repository.
 git clone https://github.com/kurapatip/streamexample.git
 
 ### Copy JSON Input Files
-Once clone is completed, copy "users-1.json" and "users-2.json" in resources folder (/src/main/resources).
+Once clone is completed, create folder "resources" under "main" folder and copy "users-1.json" and "users-2.json" in resources folder (/src/main/resources).
 
 Note : Please follow name of files as mentioned above.
 
